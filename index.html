@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to make website darkmode </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="styleSheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="./img/logo.jpg" class="logo"></a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">whats new</a></li>
+                <li><a href="#">contact</a></li>
+                <li><span class="themeswitch"></span></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>its not just coffe<br> it`s <span>alan coffe</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                    elit. Porro, eveniet dolor, praesentium dolores aliquam 
+                    expedita nesciunt corporis voluptatibus
+                     ipsam blanditiis facere! Ea corrupti tempora possimus
+                      magnam inventore eveniet laborum dolorem.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing 
+                      elit. Porro, eveniet dolor, praesentium dolores aliquam 
+                      expedita nesciunt corporis voluptatibus
+                       ipsam blanditiis facere! Ea corrupti tempora possimus
+                        magnam inventore eveniet laborum dolorem.</p>
+                        <a href="#">learn more</a>
+            </div>
+            <dive class="imgBox">
+                <img src="./img/co1.png">
+            </dive>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a></li>
+        </ul>
+    </section>
+
+    <script>
+        let themeswitch = document.querySelector('.themeswitch');
+        let body = document.querySelector('body');
+        themeswitch.onclick = function(){
+            themeswitch.classList.toggle('active');
+            body.classList.toggle('dark');
+        }
+
+        let menutoggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
